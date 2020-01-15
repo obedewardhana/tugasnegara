@@ -46,6 +46,18 @@ module.exports = function(grunt){
         dest: ''
       }
     },
+    connect: {
+      server: {
+        options: {
+          port: 8080,
+          open:true,
+          base: 'build/developments',
+          hostname: 'localhost',
+          protocol: 'http',
+          livereload: true
+        }
+      }
+    },
     watch: {
       options: {
         livereload: true,
@@ -71,22 +83,10 @@ module.exports = function(grunt){
         options: { livereload: true },
       },
       html: {
-            files: ['index.html','**/*.html'],
-            options: {
-                livereload: true,
-            }
-        },
-    },
-    connect: {
-      server: {
-        options: {
-          port: 9000,
-          base: '',
-          hostname: '0.0.0.0',
-          protocol: 'http',
-          livereload: true
-        }
-      }
+        files: ['index.html','**/*.html'],
+        tasks: ['html'],
+        options: { livereload:true },
+      },
     },
     copy: {
       files: {
