@@ -7426,6 +7426,38 @@ a:hover {
   border-radius: 50%;
   opacity: 0.3; }
 
+.portfolio-menu {
+  text-align: center; }
+
+.portfolio-menu ul li {
+  display: inline-block;
+  margin: 0;
+  list-style: none;
+  padding: 10px 15px;
+  border: 1px solid #f8c000;
+  cursor: pointer;
+  -webkit-transition: all .2 ease;
+  transition: all .2 ease; }
+
+.portfolio-menu ul li:hover {
+  background: #f8c000;
+  color: #fff; }
+
+.portfolio-item {
+  width: 100%; }
+
+.portfolio-item .item {
+  width: 303px;
+  float: left;
+  padding: 10px; }
+
+.portfolio-item .item img {
+  width: 100%; }
+
+.portfolio-menu ul li.active {
+  background: #f8c000;
+  color: #fff; }
+
 .news-image {
   overflow: hidden; }
 

@@ -1,14 +1,23 @@
+$('.portfolio-item').isotope({
+  // set itemSelector so .grid-sizer is not used in layout
+  itemSelector: '.item',
+  layoutMode: 'fitRows',
+  masonry: {
+    columnWidth: 50,
+    gutter: 10
+  }
+})
 
+$('.portfolio-menu ul li').click(function(){
+  $('.portfolio-menu ul li').removeClass('active');
+  $(this).addClass('active');
 
-//   $('.grid').isotope({
-//   // set itemSelector so .grid-sizer is not used in layout
-//   itemSelector: '.grid-item',
-//   percentPosition: true,
-//   masonry: {
-//     // use element for option
-//     columnWidth: '.grid-sizer'
-//   }
-// })
+  var selector = $(this).attr('data-filter');
+  $('.portfolio-item').isotope({
+    filter:selector
+  });
+  return false;
+})
 
 $('.owl-carousel').owlCarousel({
     loop:true,
