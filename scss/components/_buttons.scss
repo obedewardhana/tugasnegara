@@ -1,0 +1,82 @@
+
+
+.btn-style {
+  margin: 40px 0;
+}
+
+.btn-dark-outline {
+  a {
+    border: 2px solid $dark-2;
+    padding: 10px 55px;
+    color: $dark-2;
+    background: transparent;
+    font-size: 16px;
+    font-weight: 600;
+  }
+}
+
+.btn-dark-outline {
+  a:hover{
+    background: $dark-2;
+    color:$white;
+  }
+}
+
+.btn-yellow {
+  a {
+    color: $dark-2;
+    background: $yellow;
+    padding: 10px 55px;
+    font-size: 16px;
+    font-weight: 600;
+    border:2px solid transparent;
+  }
+}
+
+.btn-yellow {
+  a:hover {
+    color: $yellow;
+    background: transparent;
+    border:2px solid $yellow;
+  }
+}
+
+.btn-yellow-outline {
+  a {
+      border: 2px solid $yellow;
+      color: $yellow;
+      background: transparent;
+      padding: 10px 55px;
+      font-size: 16px;
+      font-weight: 600;
+      transition: 0.2s;
+  }
+}
+
+.btn-yellow-outline {
+  a:hover {
+    background: $yellow;
+    color: $white;
+  }
+}
+
+@media (max-width: 575px){
+  .text-right {
+      text-align: center!important;
+  }
+}
+
+button.btn-yellow {
+    color: $dark-2;
+    background: $yellow;
+    padding: 10px 55px;
+    font-size: 16px;
+    font-weight: 600;
+    border:2px solid transparent;
+}
+
+button.btn-yellow:hover{
+  color: $yellow;
+  background: transparent;
+  border:2px solid $yellow;
+}

@@ -26,6 +26,11 @@
     "url": "git://git.softwareseni.com/obeth/FEtask1.git"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.12.0",
+    "@fortawesome/free-brands-svg-icons": "^5.12.0",
+    "colcade": "^0.2.0",
+    "isotope-layout": "^3.0.6",
+    "jquery": "^3.4.1",
     "owl.carousel": "^2.3.4",
     "select2": "^4.0.12"
   }

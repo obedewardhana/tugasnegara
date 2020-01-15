@@ -8,8 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=ABeeZee&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/plugins/font-awesome/all.css">
+    <link rel="stylesheet" type="text/css" href="css/plugins/font-awesome/all.min.css">
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/plugin.min.css">
@@ -17,21 +16,364 @@
 
   </head>
   <body>
-    <nav class="nav">
-      <a class="nav-link active" href="#">Home</a>
-      <a class="nav-link" href="#">About</a>
-      <a class="nav-link" href="#">Portfolio</a>
-      <a class="nav-link" href="#">Services</a>
-      <a class="nav-link" href="#">Blog</a>
-      <a class="nav-link" href="#">Contact</a>
-    </nav>
-    <body>
+    <header class="header">
+            <nav class="navigation navbar navbar-default original" style="visibility: visible;">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="open-btn">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <h1 class="site-logo">
+                            <a class="navbar-brand" href="index.html">TRUE</a>
+                        </h1>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse navbar-right navigation-holder">
+                        <button class="close-navbar"><i class="ti-close"></i></button>
+                        <ul class="nav navbar-nav">
+                            <li class="menu-item-has-children"><a href="javascript:void(0);">Home</a>
+                                <ul class="sub-menu sub-menu-2" style="display: block;">
+                                    <li><a href="index.html">Home S1</a></li>
+                                    <li><a href="index-2.html">Home S2</a></li>
+                                    <li><a href="index-3.html">Home S3</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#service">Services</a></li>
+                            <li><a href="#protfolio">Portfolio</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <li class="menu-item-has-children">
+                                <a href="javascript:void(0);">Blog</a>
+                                <ul class="sub-menu" style="display: block;">
+                                    <li><a href="blog.html">Blog</a></li>
+                                    <li><a href="blog-width-sidebar.html">Blog With Sidebar</a></li>
+                                    <li class="menu-item-has-children">
+                                        <a href="#Level3">Blog Details</a>
+                                        <ul class="sub-menu" style="display: block;">
+                                            <li><a href="blog-single.html">Blog Details</a></li>
+                                            <li><a href="blog-single-sidebar.html">Blog Details Sidebar</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div><!-- end of nav-collapse -->
+                    <div class="bottom-border"></div>
+                </div><!-- end of container -->
+            </nav>
+        </header>
       <div class="content">
 
-      </div>
-    </body>
-    <footer>
+              <div id="home" class="hero-slider owl-carousel owl-theme">
+                  <div class="single-hs-item item-bg1">
+                      <div class="d-table">
+                          <div class="d-tablecell">
+                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                <div class="hero-text">
+                                  <h1>Hello, </br>I'm Lara Croft</h1>
+                                  <p>
+                                    Web Designer & Developer
+                                  </p>
+                                  <div class="btn-style btn-yellow-outline">
+                                    <a href="#" target="_blank">Contact me</a>
+                                  </div>
+                                </div>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="single-hs-item item-bg2">
+                      <div class="d-table">
+                          <div class="d-tablecell">
+                              <div class="hero-text">
+                                <div class="col-lg-6 col-md-12 col-sm-12">
+                                    <div class="hero-text">
+                                      <h1>Hello, </br>I'm Lara Croft</h1>
+                                      <p>
+                                        Web Designer & Developer
+                                      </p>
+                                      <div class="btn-style btn-yellow-outline">
+                                        <a href="#" target="_blank">Contact me</a>
+                                      </div>
+                                    </div>
+                                </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="single-hs-item item-bg3">
+                      <div class="d-table">
+                          <div class="d-tablecell">
+                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                <div class="hero-text">
+                                  <h1>Hello, </br>I'm Lara Croft</h1>
+                                  <p>
+                                    Web Designer & Developer
+                                  </p>
+                                  <div class="btn-style btn-yellow-outline">
+                                    <a href="#" target="_blank">Contact me</a>
+                                  </div>
+                                </div>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
 
+        <section id="about-me" class="bg-white">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6 col-md-12 col-sm-12">
+                <div class="about-image">
+                  <img src="img/lara-croft.png" alt="lara-croft" />
+                </div>
+                <div class="about-image-back">
+                  <img src="img/flame.png" alt="lara-croft" />
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12 col-sm-12">
+                <h2 class="title">
+                  About me
+                </h2>
+                <h3>
+                  I am a creative designer and developer.
+                </h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <div class="btn-style btn-yellow-outline">
+                    <a href="#">Download Portfolio</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="what-we-do" class="bg-white">
+          <div class="container">
+          <div class="col-12">
+            <h2 class="title"> What we do </h2>
+          </div>
+          <div class="row">
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="ww-wrapper">
+                  <div class="ww-icon">
+                    <i class="fa fa-laptop" aria-hidden="true"></i>
+                  </div>
+                  <div class="ww-content">
+                    <h4>Web Design</h4>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="ww-wrapper">
+                  <div class="ww-icon">
+                    <i class="fa fa-mobile" aria-hidden="true"></i>
+                  </div>
+                  <div class="ww-content">
+                    <h4>App Design</h4>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="ww-wrapper">
+                  <div class="ww-icon">
+                    <i class="fa fa-camera-retro" aria-hidden="true"></i>
+                  </div>
+                  <div class="ww-content">
+                    <h4>Photography</h4>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                  </div>
+                </div>
+              </div>
+          </div>
+          </div>
+        </section>
+<!--
+        <section id="gallery" class="bg-white">
+          <diV class="container">
+              <div class="grid">
+                <div class="col-md-4 .grid-item">
+                  <div class="portfolio">
+                    <img src="https://images.unsplash.com/photo-1517594422361-5eeb8ae275a9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="fire" />
+                  </div>
+                </div>
+                <div class="col-md-4 .grid-item">
+                  <div class="portfolio">
+                    <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="forest" />
+                  </div>
+                </div>
+                <div class="col-md-4 .grid-item">
+                  <div class="portfolio">
+                    <img src="https://images.unsplash.com/photo-1547347268-4a6dd064cdad?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="archer" />
+                  </div>
+                </div>
+                <div class="col-md-4 .grid-item">
+                  <div class="portfolio">
+                    <img src="https://images.unsplash.com/photo-1517999179346-a7078f1e40a6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=882&q=80" alt="rocks" />
+                  </div>
+                </div>
+                <div class="col-md-4 .grid-item">
+                  <div class="portfolio">
+                    <img src="https://images.unsplash.com/photo-1511593358241-7eea1f3c84e5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80" alt="water" />
+                  </div>
+                </div>
+                <div class="col-md-4 .grid-item">
+                  <div class="portfolio">
+                    <img src="https://images.unsplash.com/photo-1503577005093-b2cfc4b74604?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="old-bridge" />
+                  </div>
+                </div>
+              </div>
+          </diV>
+        </section> -->
+
+        <section id="news" class="bg-light-3">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="news-content">
+                  <div class="news-image">
+                    <a href="#">
+                      <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="news-image" />
+                    </a>
+                  </div>
+                  <div class="news-desc">
+                    <a href="#"><h2>title</h2></a>
+                    <span>Written By : John Smith | 14 Jan 2019</span>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="news-content">
+                  <div class="news-image">
+                    <a href="#">
+                      <img src="https://images.unsplash.com/photo-1516542076529-1ea3854896f2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=751&q=80" alt="news-image" />
+                    </a>
+                  </div>
+                  <div class="news-desc">
+                    <a href="#"><h2>title</h2></a>
+                    <span>Written By : John Smith | 14 Jan 2019</span>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="news-content">
+                  <div class="news-image">
+                    <a href="#">
+                      <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="news-image" />
+                    </a>
+                  </div>
+                  <div class="news-desc">
+                    <a href="#"><h2>title</h2></a>
+                    <span>Written By : John Smith | 14 Jan 2019</span>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="hire-me" class="bg-light-2">
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col-md-8 col-sm-12 col-12">
+                  <div class="left-content">
+                    <h2>Hire me for some project</h2>
+                    <p>
+                      Lorem psum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-12 col-12">
+                  <div class="right-content">
+                    <div class="btn-style btn-dark-outline text-right"><a href="#">Hire Me</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
+
+        <section id="contact" class="bg-white">
+          <div class="container">
+              <div class="row">
+                    <div class="col-lg-3 col-md-4">
+                        <div class="contact-info">
+                            <h4>Contact Info.</h4>
+                            <div class="small-info">
+                                <p><i class="fa fa-map-marker"></i></p>
+                                <p>Your street 310,Your Area Dremshot,Califonia, USA</p>
+                            </div>
+                            <div class="small-info">
+                                <p><i class="fa fa-mobile"></i></p>
+                                <p>(11) 0123-45678</p>
+                            </div>
+                            <div class="small-info">
+                                <p><i class="fa fa-envelope"></i></p>
+                                <p>your email@yahoo.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-md-8">
+                        <div class="contact-wrapper">
+                            <h4>Send Your Message</h4>
+                            <p>Your street 310,Your Area Dremshot,Califonia, USA<br>Maecenas erat dui, rhoncus a est vel,</p>
+                            <form id="contact-form" class="contact-validation-active" novalidate="novalidate">
+                                <div class="half">
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Your Name*">
+                                </div>
+                                <div class="half">
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Your Email*">
+                                </div>
+                                <div>
+                                    <textarea class="form-control" name="notes" placeholder="Your Message*"></textarea>
+                                </div>
+                                      <button type="submit" class="btn-style btn-yellow">Send Invitation</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+          </div>
+        </section>
+      </div>
+
+    <footer class="bg-dark">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-12">
+                  <div class="footer-content">
+                      <ul>
+                          <li><a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+                          <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                          <li><a href="#"><i class="fab fa-skype" aria-hidden="true"></i></a></li>
+                          <li><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                          <li><a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+                      </ul>
+                      <span>©2019 <a href="#">Lara</a>. All Rights Reserved</span>
+                  </div>
+              </div>
+        </div>
+      </div>
     </footer>
+    <script src="js/plugin.min.js"></script>
+    <script src="js/app.min.js"></script>
   </body>
 </html>

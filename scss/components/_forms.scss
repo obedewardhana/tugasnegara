@@ -1,0 +1,54 @@
+.contact-wrapper {
+  form input, form select {
+      background-color: transparent;
+      height: 45px;
+      font-size: 16px;
+      font-size: 1rem;
+      padding: 6px 15px;
+      color: #666;
+      font-weight: 300;
+      border: 0;
+      border: 1px solid #999;
+      border-radius: 0;
+      outline: 0;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+  }
+}
+
+.contact-wrapper {
+  form textarea {
+    background-color: transparent;
+    font-size: 16px;
+    height: 150px;
+    font-size: 1rem;
+    padding: 6px 15px;
+    color: #666;
+    font-weight: 300;
+    border: 0;
+    border: 1px solid #999;
+    border-radius: 0;
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+}
+
+.contact-wrapper {
+  form input:focus, form select:focus, form textarea:focus {
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      outline: none;
+      border-color: #ccc;
+  }
+}
+
+.contact-wrapper {
+  form div {
+      padding: 0 30px 30px 0;
+  }
+}
+
+form#contact-form {
+    margin-right: -30px;
+}

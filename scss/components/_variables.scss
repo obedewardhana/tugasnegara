@@ -11,6 +11,33 @@ $primary: #57B9C0;
 $secondary: #54AF8D;
 $dark: #7f8081;
 $dark-2: #4a4a4a;
+$black: #000;
 $light: #fff;
 $light-2: #f2f2f2;
-$yellow: #F6DF82;
+$light-3: #f7f7f7;
+$yellow: #f8c000;
+
+
+.bg-white {
+  background-color: $light;
+}
+
+.bg-dark {
+  background-color: $dark;
+}
+
+.bg-dark-2 {
+  background-color: $dark-2;
+}
+
+.bg-light-2 {
+  background-color: $light-2;
+}
+
+.bg-light-3 {
+  background-color: $light-3;
+}
+
+.bg-yellow {
+  background-color: $yellow;
+}
