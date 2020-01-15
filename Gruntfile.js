@@ -72,7 +72,6 @@ module.exports = function(grunt){
       },
       html: {
             files: ['index.html','**/*.html'],
-            tasks: ['html'],
             options: {
                 livereload: true,
             }
@@ -81,9 +80,9 @@ module.exports = function(grunt){
     connect: {
       server: {
         options: {
-          port: 80,
-          base: 'builds/development',
-          hostname: 'localhost',
+          port: 9000,
+          base: '',
+          hostname: '0.0.0.0',
           protocol: 'http',
           livereload: true
         }

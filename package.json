@@ -21,10 +21,6 @@
     "load-grunt-tasks": "^5.1.0",
     "node-sass": "^4.13.0"
   },
-  "repository": {
-    "type": "git",
-    "url": "git://git.softwareseni.com/obeth/FEtask1.git"
-  },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.12.0",
     "@fortawesome/free-brands-svg-icons": "^5.12.0",
