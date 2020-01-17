@@ -60,8 +60,8 @@
   }
 }
 
-@media (max-width: 575px){
-  .text-right {
+@media (max-width: 1024px){
+  .btn-style.text-right {
       text-align: center!important;
   }
 }
@@ -79,4 +79,11 @@ button.btn-yellow:hover{
   color: $yellow;
   background: transparent;
   border:2px solid $yellow;
+}
+
+button {
+    -webkit-appearance: none;
+    box-shadow: none;
+    border: none;
+    background: transparent;
 }

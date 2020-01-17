@@ -7197,8 +7197,8 @@ a.text-dark:hover, a.text-dark:focus {
   background: #f8c000;
   color: #fff; }
 
-@media (max-width: 575px) {
-  .text-right {
+@media (max-width: 1024px) {
+  .btn-style.text-right {
     text-align: center !important; } }
 
 button.btn-yellow {
@@ -7214,6 +7214,12 @@ button.btn-yellow:hover {
   background: transparent;
   border: 2px solid #f8c000; }
 
+button {
+  -webkit-appearance: none;
+  box-shadow: none;
+  border: none;
+  background: transparent; }
+
 body {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
@@ -7225,7 +7231,7 @@ ul li {
   list-style-type: none; }
 
 section {
-  padding: 80px 20px; }
+  padding: 80px 40px; }
 
 h1, h2, h3, h4, h5 {
   font-weight: 600;
@@ -7267,6 +7273,69 @@ h2 {
 .navbar {
   display: inline-block;
   text-align: right; }
+
+.navbar-mobile {
+  display: none; }
+
+.toggle-menu {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 40px;
+  font-size: 2em;
+  display: none;
+  z-index: 25; }
+
+.toggle-down {
+  cursor: pointer; }
+
+@media screen and (max-width: 990px) {
+  .header-wrapper {
+    position: fixed;
+    background: #fff;
+    left: 0;
+    z-index: 25; }
+  #banner {
+    margin-top: 92.67px; }
+  .header-wrapper .logo h1 {
+    color: #000; }
+  .toggle-menu {
+    display: block; }
+  .toggle-down.close .fa {
+    display: none; }
+  .toggle-down.close::after {
+    content: "\f00d";
+    font-family: "FontAwesome";
+    color: #000; }
+  .navbar-mobile {
+    display: block;
+    position: fixed;
+    height: 100vh;
+    top: 92.67px;
+    background: rgba(220, 220, 220, 0.9);
+    margin: unset;
+    z-index: 20;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    transform: translateY(-100%);
+    transition: all 500ms ease;
+    -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3); }
+  .navbar-mobile a {
+    display: block;
+    color: #000;
+    font-weight: 400;
+    padding: 20px 30px;
+    border-bottom: 1px solid #f2f2f2;
+    transition: all 500ms ease; }
+  .navbar-mobile a:hover {
+    color: #f8c000;
+    background: #fff;
+    transition: all 500ms ease; }
+  .open {
+    transform: translateY(0px);
+    transition: all 500ms ease; } }
 
 #what-we-do h2 {
   text-align: center;
@@ -7348,7 +7417,7 @@ a:hover {
   font-weight: 600;
   margin: 0; }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 990px) {
   .navbar.col-lg-8 {
     display: none; } }
 
@@ -7382,7 +7451,7 @@ a:hover {
 .grid-item--width2 {
   width: 40%; }
 
-.portfolio {
+.gallery {
   margin-bottom: 30px; }
 
 .ww-wrapper {
@@ -7426,10 +7495,10 @@ a:hover {
   border-radius: 50%;
   opacity: 0.3; }
 
-.portfolio-menu {
+.gallery-menu {
   text-align: center; }
 
-.portfolio-menu ul li {
+.gallery-menu ul li {
   display: inline-block;
   margin: 0;
   list-style: none;
@@ -7437,24 +7506,46 @@ a:hover {
   border: 1px solid #f8c000;
   cursor: pointer;
   -webkit-transition: all .2 ease;
-  transition: all .2 ease; }
+  transition: all .2 ease;
+  margin-bottom: 6px; }
 
-.portfolio-menu ul li:hover {
+.gallery-menu ul li:hover {
   background: #f8c000;
   color: #fff; }
 
-.portfolio-item {
-  width: 100%; }
+.gallery-item {
+  width: auto;
+  overflow: hidden;
+  display: block;
+  margin: 0 auto; }
 
-.portfolio-item .item {
-  width: 303px;
-  float: left;
-  padding: 10px; }
+.gallery-item .item {
+  width: calc(33.33% - 20px);
+  padding: 10px;
+  min-height: 208.6px;
+  overflow: hidden; }
 
-.portfolio-item .item img {
-  width: 100%; }
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+  .gallery-item .item {
+    width: calc(50% - 20px);
+    padding: 10px;
+    min-height: 208.6px;
+    overflow: hidden; } }
 
-.portfolio-menu ul li.active {
+@media screen and (max-width: 767px) {
+  .gallery-item .item {
+    width: 100%; } }
+
+.gallery-item::after {
+  clear: both;
+  content: '';
+  display: table; }
+
+.gallery-item .item img {
+  width: 100%;
+  height: 100%; }
+
+.gallery-menu ul li.active {
   background: #f8c000;
   color: #fff; }
 
@@ -7532,7 +7623,7 @@ a:hover {
   text-align: center;
   padding-bottom: 30px; }
 
-@media (max-width: 767px) and (min-width: 425px) {
+@media (max-width: 1080px) and (min-width: 425px) {
   .contact-wrapper {
     margin-top: 60px; }
   .contact-wrapper h4 {
@@ -7545,7 +7636,9 @@ a:hover {
     display: block;
     text-align: center; }
   #about-me .col-lg-6:nth-of-type(2) {
-    padding-top: 40px; } }
+    padding-top: 40px; }
+  section {
+    padding: 40px 40px; } }
 
 footer {
   padding: 30px 0; }

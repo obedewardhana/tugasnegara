@@ -22,10 +22,10 @@
       <div class="container">
         <div class="row">
           <div class="header-wrapper">
-            <div class="logo col-lg-4 col-md-6">
+            <div class="logo col-lg-4">
               <h1>ARA</h1>
             </div>
-            <div class="navbar col-lg-8">
+            <div class="navbar col-lg-8 ">
               <a href="#"> Home </a>
               <a href="#"> About </a>
               <a href="#"> Services </a>
@@ -33,31 +33,20 @@
               <a href="#"> Blog </a>
               <a href="#"> Contact </a>
             </div>
-            <!-- <nav class="navbar navbar-expand-sm bg-light">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a href="#" > Home </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" > About </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" > Services </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" > Gallery </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" > Blog </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" > Contact </a>
-                  </li>
-                </ul>
-            </nav> -->
+            <div class="toggle-menu">
+              <a class="toggle-down"><i class="fa fa-bars"></i></a>
+            </div>
           </div>
-        </div>
+          <div class="navbar-mobile">
+            <a href="#"> Home </a>
+            <a href="#"> About </a>
+            <a href="#"> Services </a>
+            <a href="#"> Gallery </a>
+            <a href="#"> Blog </a>
+            <a href="#"> Contact </a>
+          </div>
       </div>
+    </div>
     </header>
 
       <div class="content">
@@ -160,15 +149,15 @@
 
         <section id="gallery" class="bg-white">
           <diV class="container">
-            <div class="portfolio-menu">
+            <div class="gallery-menu">
               <ul>
                 <li class="active" data-filter="*">All</li>
                 <li class="" data-filter=".web">Web Design</li>
                 <li class="" data-filter=".seo">Seo</li>
-                <li class="" data-filter=".">graphics</li>
+                <li class="" data-filter=".">Graphics</li>
               </ul>
             </div>
-            <div class="portfolio-item">
+            <div class="gallery-item">
               <div class="item web">
                 <img src="https://cdn.pixabay.com/photo/2016/11/08/04/49/jungle-1807476_1280.jpg" alt="jungle" />
               </div>
@@ -194,7 +183,7 @@
         <section id="news" class="bg-light-3">
           <div class="container">
             <div class="row">
-              <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
                 <div class="news-content">
                   <div class="news-image">
                     <a href="#">
@@ -210,7 +199,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
                 <div class="news-content">
                   <div class="news-image">
                     <a href="#">
@@ -226,7 +215,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
                 <div class="news-content">
                   <div class="news-image">
                     <a href="#">
@@ -300,7 +289,9 @@
                                 <div>
                                     <textarea class="form-control" name="notes" placeholder="Your Message*"></textarea>
                                 </div>
-                                      <button type="submit" class="btn-style btn-yellow">Send Invitation</button>
+                                <div>
+                                        <button type="submit" class="btn-style btn-yellow">Send Invitation</button>
+                                </div>
                             </form>
                         </div>
                     </div>
