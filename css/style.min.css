@@ -7235,7 +7235,8 @@ section {
 
 h1, h2, h3, h4, h5 {
   font-weight: 600;
-  line-height: 1.5; }
+  line-height: 1.5;
+  word-wrap: break-word; }
 
 h2 {
   font-size: 36px; }
@@ -7514,7 +7515,7 @@ a:hover {
   color: #fff; }
 
 .gallery-item {
-  width: auto;
+  width: 100%;
   overflow: hidden;
   display: block;
   margin: 0 auto; }
@@ -7615,6 +7616,12 @@ a:hover {
 .half {
   width: 50%;
   float: left; }
+
+@media screen and (max-width: 768px) {
+  .half {
+    width: 100%; }
+  .btn-style {
+    width: 100%; } }
 
 .small-info {
   text-align: center; }
