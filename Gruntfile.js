@@ -36,13 +36,13 @@ module.exports = function(grunt){
       build: {
         files: {
           'js/app.min.js': ['js/app.js'],
-          'js/plugin.min.js': [ 'js/plugins/jquery.min.js','js/plugins/bootstrap.min.js', 'js/plugins/owl.carousel.js', 'js/plugins/select2.min.js', 'js/plugins/isotope.pkgd.min.js']
+          'js/plugin.min.js': [ 'js/plugins/bootstrap.min.js', 'js/plugins/owl.carousel.js', 'js/plugins/select2.min.js', 'js/plugins/isotope.pkgd.min.js']
         }
       }
     },
     codekit: {
       files: {
-        src: ['assets/kit/**/*.kit'],
+        src: ['kit/**/*.kit'],
         dest: ''
       }
     },
@@ -78,15 +78,10 @@ module.exports = function(grunt){
         options: { livereload: true },
       },
       codekit: {
-        files: ['assets/kit/**/*'],
+        files: ['kit/**/*'],
         tasks: ['codekit'],
         options: { livereload: true },
-      },
-      html: {
-        files: ['index.html','**/*.html'],
-        tasks: ['html'],
-        options: { livereload:true },
-      },
+      }
     },
     copy: {
       files: {
